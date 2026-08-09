@@ -3671,12 +3671,26 @@
 
 @media (min-width: 1241px) {
     .hero {
-        --hero-gap: clamp(4rem, 6.3vw, 8rem);
+        --hero-text-w: 690px;
+        --hero-gap: clamp(2.5rem, 3vw, 3.5rem);
         --hero-edge-safe: clamp(26px, 3vw, 44px);
     }
 
     .hero__inner.shell {
-        max-width: min(1540px, calc(100vw - (var(--hero-edge-safe) * 2)));
+        max-width: min(1320px, calc(100vw - (var(--hero-edge-safe) * 2)));
         padding-inline: clamp(20px, 2.6vw, 40px);
+    }
+
+    .hero__logo {
+        margin-inline-start: max(0px, calc((100% - var(--hero-text-w) - var(--hero-media-w) - var(--hero-gap)) / 2));
+    }
+
+    .hero__grid {
+        grid-template-columns: minmax(0, var(--hero-text-w)) var(--hero-media-w);
+        justify-content: center;
+    }
+
+    .hero__media {
+        --hero-media-offset-x: 0px;
     }
 }
