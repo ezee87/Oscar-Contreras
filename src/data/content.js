@@ -241,6 +241,7 @@ export const media = {
   videos: [
     { title: 'TVN Muy Buenos Días - La Autoestima', id: 'ZbiO5r7cCjQ' },
     { title: 'El Abogado Vive TV - Marketing Personal', id: '7XauvsQL5oc' },
+    { title: 'Pre Negociacion - Centro BCI Nace', id: 'JCFewdsdUkE' },
   ],
 };
 

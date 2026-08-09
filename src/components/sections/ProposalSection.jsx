@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { gsap, useGSAP } from '../../lib/gsap.js';
 import SectionShell from '../layout/SectionShell.jsx';
-import { proposal } from '../../data/content.js';
+import { brand, proposal } from '../../data/content.js';
 import { useReducedMotion } from '../../hooks/useReducedMotion.js';
 
 function TextWithHighlight({ text, highlight }) {
@@ -136,6 +136,16 @@ export default function ProposalSection() {
             />
           </p>
         </div>
+
+        <figure className="proposal__banner">
+          <span className="proposal__banner-label">Nuestro equipo</span>
+          <img
+            src={brand.banner}
+            alt="Equipo de Impulso Laboral"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
       </div>
     </SectionShell>
   );

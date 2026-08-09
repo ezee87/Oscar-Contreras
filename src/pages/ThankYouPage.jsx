@@ -197,7 +197,7 @@ export default function ThankYouPage() {
 
         {/* 7. SECCIÓN DE OSCAR */}
         <div className="ty-oscar-wrap">
-          <OscarSection />
+          <OscarSection showInstitutionalLink />
         </div>
 
         {/* 8. APARICIONES EN MEDIOS */}

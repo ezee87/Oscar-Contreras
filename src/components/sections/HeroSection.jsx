@@ -15,7 +15,6 @@ export default function HeroSection() {
           alt={brand.logoAlt}
           width="200"
           height="64"
-          fetchPriority="high"
         />
 
         <div className="hero__grid">
@@ -41,6 +40,16 @@ export default function HeroSection() {
 
             <p className="hero__subtitle">{hero.subtitle}</p>
             <PrimaryCTA className="hero__cta" disableMotion />
+
+            <figure className="hero__mobile-photo">
+              <img
+                src={oscar.primary}
+                alt="Oscar Contreras, Director de Empodera Consulting Group"
+                width="620"
+                height="760"
+                loading="eager"
+              />
+            </figure>
           </div>
 
           <div className="hero__media">
@@ -54,7 +63,6 @@ export default function HeroSection() {
                   alt="Oscar Contreras, Director de Empodera Consulting Group"
                   width="620"
                   height="760"
-                  fetchPriority="high"
                 />
               </figure>
 

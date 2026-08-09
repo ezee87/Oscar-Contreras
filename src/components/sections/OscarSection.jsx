@@ -7,7 +7,11 @@ import { useReducedMotion } from '../../hooks/useReducedMotion.js';
 
 // Sección de autoridad: retrato editorial + copy con jerarquía.
 // Acepta overrides opcionales via props para reutilización en otras páginas.
-export default function OscarSection({ title: titleProp, paragraphs: paragraphsProp } = {}) {
+export default function OscarSection({
+  title: titleProp,
+  paragraphs: paragraphsProp,
+  showInstitutionalLink = false,
+} = {}) {
   const ref = useRef(null);
   const reduced = useReducedMotion();
   const title = titleProp ?? oscarSection.title;
@@ -55,17 +59,36 @@ export default function OscarSection({ title: titleProp, paragraphs: paragraphsP
           />
         </figure>
         <div className="oscar__body">
-          <SectionHeading className="oscar__heading">
-            {title}
-          </SectionHeading>
-          <div className="oscar__copy">
-            <p>
-              <span className="oscar__name">{oscarSection.nameHighlight}</span>
-              {paragraphs[0].slice(oscarSection.nameHighlight.length)}
-            </p>
-            <p>{paragraphs[1]}</p>
-            <p>{paragraphs[2]}</p>
+          <div className="oscar__body-main">
+            <SectionHeading className="oscar__heading">
+              {title}
+            </SectionHeading>
+            <div className="oscar__copy">
+              <p>
+                <span className="oscar__name">{oscarSection.nameHighlight}</span>
+                {paragraphs[0].slice(oscarSection.nameHighlight.length)}
+              </p>
+              <p>{paragraphs[1]}</p>
+              <p>{paragraphs[2]}</p>
+            </div>
           </div>
+
+          {showInstitutionalLink && (
+            <div className="oscar__institutional oscar__institutional--right">
+              <p className="oscar__institutional-text">
+                Para conocer más sobre la trayectoria de Empodera Consulting Group, podés visitar nuestra web institucional.
+              </p>
+
+              <a
+                className="oscar__institutional-link"
+                href="https://www.empodera.cl/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visitar web institucional
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </SectionShell>
