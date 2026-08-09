@@ -68,6 +68,9 @@ export default function Footer({ extended = false }) {
             src={brand.logo}
             alt={brand.logoAlt}
             className="site-footer__logo"
+            width="900"
+            height="418"
+            loading="lazy"
           />
         </a>
 

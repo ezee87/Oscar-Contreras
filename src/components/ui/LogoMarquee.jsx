@@ -55,6 +55,8 @@ export default function LogoMarquee({ logos }) {
             <img
               src={logo.src}
               alt={`Logo cliente ${logo.name}`}
+              width="160"
+              height="66"
               loading="lazy"
               decoding="async"
             />

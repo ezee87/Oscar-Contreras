@@ -65,6 +65,8 @@ export default function FullFooter() {
             src={brand.logo}
             alt={brand.logoAlt}
             className="full-footer__logo"
+            width="900"
+            height="418"
             loading="lazy"
           />
         </a>

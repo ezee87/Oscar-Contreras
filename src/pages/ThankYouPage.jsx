@@ -38,6 +38,8 @@ export default function ThankYouPage() {
                 src={brand.logo}
                 alt={brand.logoAlt}
                 className="page-header__logo"
+                width="900"
+                height="418"
               />
             </a>
           </div>

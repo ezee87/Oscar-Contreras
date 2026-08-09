@@ -2782,7 +2782,7 @@
 .vmodal {
     position: fixed;
     inset: 0;
-    z-index: 1000;
+    z-index: 9999;
     background: rgba(16, 38, 61, 0.82);
     backdrop-filter: blur(4px);
     display: grid;
@@ -2803,10 +2803,13 @@
 
 .vmodal__box {
     width: min(960px, 100%);
+    max-height: calc(100dvh - clamp(2rem, 6vw, 4rem));
     background: var(--empodera-navy-deep);
     border-radius: var(--radius-md);
     overflow: hidden;
     box-shadow: var(--shadow-lift);
+    display: flex;
+    flex-direction: column;
 }
 
 .vmodal__bar {
@@ -2842,6 +2845,8 @@
 
 .vmodal__frame {
     aspect-ratio: 16 / 9;
+    width: 100%;
+    max-height: calc(100dvh - 8.5rem);
 }
 
 .vmodal__frame iframe {
@@ -2849,6 +2854,25 @@
     height: 100%;
     border: none;
     display: block;
+}
+
+@media (max-width: 768px) {
+    .vmodal {
+        padding: 1rem;
+    }
+
+    .vmodal__bar {
+        padding: 0.75rem 0.9rem;
+    }
+
+    .vmodal__title {
+        font-size: var(--step--1);
+        line-height: 1.35;
+    }
+
+    .vmodal__frame {
+        max-height: calc(100dvh - 7.5rem);
+    }
 }
 
 /* ---------- FOOTER ---------- */

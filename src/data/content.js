@@ -2,9 +2,9 @@
 // Copy EXACTO según 03_ESTRUCTURA_Y_COPY_EXACTO.txt — no reescribir ni resumir.
 
 import logo from '../assets/brand/logo.png';
-import banner from '../assets/brand/banner.png';
+import banner from '../assets/brand/banner.webp';
 import oscarPrimary from '../assets/oscar/Oscar.jpg';
-import oscarSecondary from '../assets/oscar/oscar2.jpg';
+import oscarSecondary from '../assets/oscar/oscar2.webp';
 
 import rodrigoImg from '../assets/testimonios/rodrigo_moletto.webp';
 import jorgeImg from '../assets/testimonios/jorge_olivares_test.webp';

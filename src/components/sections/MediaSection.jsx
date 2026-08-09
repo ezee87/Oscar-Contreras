@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import SectionShell from '../layout/SectionShell.jsx';
 import SectionHeading from '../ui/SectionHeading.jsx';
 import { media } from '../../data/content.js';
@@ -98,7 +99,7 @@ export default function MediaSection() {
         ))}
       </div>
 
-      {active && (
+      {active && createPortal(
         <div
           className="vmodal"
           role="dialog"
@@ -130,7 +131,8 @@ export default function MediaSection() {
               />
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </SectionShell>
   );

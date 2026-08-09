@@ -54,6 +54,8 @@ export default function OscarSection({
           <img
             src={oscar.secondary}
             alt="Oscar Contreras, Fundador y Director de Empodera Consulting Group"
+            width="2571"
+            height="3849"
             loading="lazy"
             decoding="async"
           />

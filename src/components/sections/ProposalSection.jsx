@@ -142,6 +142,8 @@ export default function ProposalSection() {
           <img
             src={brand.banner}
             alt="Equipo de Impulso Laboral"
+            width="2097"
+            height="750"
             loading="lazy"
             decoding="async"
           />

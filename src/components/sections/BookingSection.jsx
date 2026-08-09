@@ -33,6 +33,7 @@ export default function BookingSection() {
               id={booking.iframeId}
               title="Agenda tu evaluación estratégica gratuita"
               className="booking__iframe"
+              loading="lazy"
               scrolling="yes"
             />
           </div>

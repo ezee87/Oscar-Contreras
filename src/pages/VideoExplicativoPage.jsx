@@ -27,6 +27,8 @@ export default function VideoExplicativoPage() {
                 src={brand.logo}
                 alt={brand.logoAlt}
                 className="vexp-logo"
+                width="900"
+                height="418"
               />
             </a>
           </div>

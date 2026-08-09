@@ -415,9 +415,17 @@
 
 .wistia-player-container {
   width: 100%;
+  aspect-ratio: 16 / 9;
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-lift);
+}
+
+.wistia-player-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
 }
 
 .wistia-player-container wistia-player {
