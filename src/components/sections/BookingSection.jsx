@@ -4,7 +4,9 @@ import { booking } from '../../data/content.js';
 
 // Calendario real. Contenedor id="agenda" (destino de todos los CTA).
 // El script form_embed.js se carga una sola vez.
-export default function BookingSection() {
+export default function BookingSection({ landingVariant }) {
+  const iframeUrl = new URL(booking.iframeSrc);
+  iframeUrl.searchParams.set('landing_variant', landingVariant);
 
   return (
     <SectionShell id="agenda" tabIndex={-1} variant="white" className="booking">
@@ -29,7 +31,7 @@ export default function BookingSection() {
         <div className="booking__calendar">
           <div className="booking__calendar-scroll">
             <iframe
-              src={booking.iframeSrc}
+              src={iframeUrl.toString()}
               id={booking.iframeId}
               title="Agenda tu evaluación estratégica gratuita"
               className="booking__iframe"
