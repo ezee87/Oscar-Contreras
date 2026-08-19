@@ -1,10 +1,13 @@
 import SectionShell from '../layout/SectionShell.jsx';
 import Reveal from '../ui/Reveal.jsx';
 import { booking } from '../../data/content.js';
+import usePartialLeadCapture from '../../hooks/usePartialLeadCapture.js';
 
 // Calendario real. Contenedor id="agenda" (destino de todos los CTA).
 // El script form_embed.js se carga una sola vez.
 export default function BookingSection({ landingVariant }) {
+  usePartialLeadCapture(landingVariant);
+
   const iframeUrl = new URL(booking.iframeSrc);
   iframeUrl.searchParams.set('landing_variant', landingVariant);
 
