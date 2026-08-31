@@ -22,7 +22,7 @@ Animaciones, ScrollTrigger, CTA y motion budget.
 Arquitectura, componentes y comportamiento.
 
 07_ASSETS_Y_MULTIMEDIA.txt
-Rutas, nombres, videos, calendario y tracking.
+Rutas, nombres, videos y calendario.
 
 08_IMPLEMENTACION_TECNICA.txt
 Reglas de código, build y estructura.

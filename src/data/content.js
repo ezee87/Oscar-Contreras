@@ -221,9 +221,6 @@ export const empodera = {
 export const booking = {
   title: '¿Preparado para comenzar tu cambio laboral?',
   emphasis: '¡Agendemos!',
-  iframeSrc: 'https://links.iqautomated.io/widget/booking/CUSXuaCRyCHsDYMMm5qf',
-  iframeId: 'CUSXuaCRyCHsDYMMm5qf_1783260015446',
-  embedScript: 'https://links.iqautomated.io/js/form_embed.js',
 };
 
 export const oscarSection = {

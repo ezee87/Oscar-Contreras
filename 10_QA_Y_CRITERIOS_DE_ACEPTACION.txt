@@ -13,7 +13,6 @@ CHECKLIST FUNCIONAL
 [ ] Todos los CTA llevan a #agenda.
 [ ] El calendario funciona.
 [ ] El script del calendario carga una sola vez.
-[ ] El tracking externo carga una sola vez.
 [ ] Los 3 videos son correctos.
 [ ] Los videos no reproducen automáticamente con sonido.
 [ ] Se usan todos los logos de empresas.
@@ -76,4 +75,4 @@ No considerar terminado hasta:
 2. Ejecutar build.
 3. Corregir.
 4. Revisar breakpoints.
-5. Verificar calendario, tracking, videos y CTA.
+5. Verificar calendario, videos y CTA.

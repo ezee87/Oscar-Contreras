@@ -47,7 +47,6 @@ Luego:
 16. Usa los 8 testimonios con imágenes correctas.
 17. Inserta los 3 videos.
 18. Inserta el calendario real.
-19. Inserta el tracking externo exacto una sola vez.
 20. Optimiza responsive, accesibilidad y performance.
 21. Prueba breakpoints principales.
 22. Ejecuta build y lint si existe.
